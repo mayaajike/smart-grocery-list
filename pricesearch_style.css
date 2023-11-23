@@ -1,0 +1,130 @@
+form {
+    position: fixed;
+    top: 180px;
+    left: 29%;
+    background-color: white;
+    padding: 10px;
+    color: white;
+    border: 3px solid #146BAA; 
+    border-radius: 25px;
+    z-index: 1;
+}
+
+input[type="text"] {
+    width: 700px;
+    height: 25px;
+    /* flex-shrink: 0; */
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #146BAA;
+    background-color: white;
+    z-index: 1;
+}
+
+.search::placeholder {
+    color: #146BAA;
+    z-index: 1;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#home,
+#home-icon {
+    position: fixed;
+    top: 6px;
+    right: 143px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+}
+
+#account, 
+#account-icon {
+    position: fixed;
+    top: 9px;
+    right: 85px;
+    z-index: 2;
+    width: 45px;
+    height: 45px;
+}
+
+#options,
+#options-icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+}
+
+
+.blue-rectangle {
+    position: fixed;
+    top: 70px;
+    left: 175px;
+    width: 1230px;
+    height: 70px;
+    border-radius: 30px;
+    background-color: #146BAA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricesearch-text {
+    position: fixed;
+    color: #FFD448;
+    font-family: 'Saira Condensed';
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#dairy-container {
+    position: fixed;
+    top: 290px;
+    left: 90px;
+}
+
+.rectangle1 {
+    width: 380px;
+    height: 360px;
+    border-radius: 30px;
+    border: 5px solid #146BAA;
+    background-color: white;
+    position: relative;
+}
+
+#dairy-products {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 230px;
+    height: 230px;
+
+}
+
+#dairy-text {
+    position: absolute;
+    color: black;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    top: 85%;
+    left: 180px;
+    transform: translate(-50%, -50%);
+}
