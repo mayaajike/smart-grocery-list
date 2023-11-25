@@ -1,5 +1,10 @@
+body {
+    overflow-x: hidden;
+    margin-bottom: 25px;
+}
+
 form {
-    position: fixed;
+    position: absolute;
     top: 180px;
     left: 29%;
     background-color: white;
@@ -68,7 +73,7 @@ input[type="text"] {
 
 
 .blue-rectangle {
-    position: fixed;
+    position: absolute;
     top: 70px;
     left: 175px;
     width: 1230px;
@@ -81,7 +86,7 @@ input[type="text"] {
 }
 
 .pricesearch-text {
-    position: fixed;
+    position: absolute;
     color: #FFD448;
     font-family: 'Saira Condensed';
     font-size: 54px;
@@ -91,40 +96,304 @@ input[type="text"] {
     text-transform: uppercase;
 }
 
-#dairy-container {
-    position: fixed;
-    top: 290px;
-    left: 90px;
+.food-section-containers {
+    display: flex;
 }
 
-.rectangle1 {
+#dairy-container {
+    position: absolute;
+    top: 324px;
+    left: 90px;
+    width: 100%;
+    height: 360px;
+    display: flex;
+}
+
+.dairy-rectangle {
     width: 380px;
     height: 360px;
     border-radius: 30px;
-    border: 5px solid #146BAA;
-    background-color: white;
-    position: relative;
+    border: 3px solid #146BAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 50px; */
+    background: url('dairy-products.jpeg') no-repeat center center / cover;
 }
 
-#dairy-products {
-    position: absolute;
-    top: 40px;
-    left: 50px;
-    width: 230px;
-    height: 230px;
 
+#dairy-products {
+    display: none;
 }
 
 #dairy-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#fruit-container {
     position: absolute;
-    color: black;
-    font-family: 'Roboto Condensed';
-    font-size: 20px;
-    font-weight: bolder;
-    font-style: normal;
-    font-weight: 300;
-    text-transform: uppercase;
-    top: 85%;
-    left: 180px;
-    transform: translate(-50%, -50%);
+    top: 324px;
+    left: 575px;
+    width: 100%;
+    height: 360px;
+    display: flex;
+}
+
+.fruit-rectangle {
+    width: 380px;
+    height: 360px;
+    border-radius: 30px;
+    border: 3px solid #146BAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 20px; */
+    background: url('fruits.jpg') no-repeat center center / cover;
+}
+
+#fruits {
+    display: none;
+}
+
+#fruits-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#vegetable-container {
+    position: absolute;
+    top: 324px;
+    left: 1060px;
+    width: 100%;
+    height: 360px;
+    display: flex;
+}
+
+.vegetable-rectangle {
+    width: 380px;
+    height: 360px;
+    border-radius: 30px;
+    border: 3px solid #146BAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 20px; */
+    background: url('vegetables.jpg') no-repeat center center / cover;
+}
+
+#vegetables {
+    display: none;
+}
+
+#vegetables-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#meat-container {
+    position: absolute;
+    top: 760px;
+    left: 90px;
+    width: 100%;
+    height: 360px;
+    display: flex;
+}
+
+.meat-rectangle {
+    width: 380px;
+    height: 360px;
+    border-radius: 30px;
+    border: 3px solid #146BAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 20px; */
+    background: url('meats.jpg') no-repeat center center / cover;
+}
+
+#meat {
+    display: none;
+}
+
+#meat-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#bread-container {
+    position: absolute;
+    top: 760px;
+    left: 575px;
+    width: 100%;
+    height: 360px;
+    display: flex;
+}
+
+.bread-rectangle {
+    width: 380px;
+    height: 360px;
+    border-radius: 30px;
+    border: 3px solid #146BAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 20px; */
+    background: url('bread.jpg') no-repeat center center / cover;
+}
+
+#bread {
+    display: none;
+}
+
+#bread-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#frozen-food-container {
+    position: absolute;
+    top: 760px;
+    left: 1060px;
+    width: 100%;
+    height: 360px;
+    display: flex;
+}
+
+.frozen-food-rectangle {
+    width: 380px;
+    height: 360px;
+    border-radius: 30px;
+    border: 3px solid #146BAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 20px; */
+    background: url('frozen-foods.png') no-repeat center center / cover;
+}
+
+#frozen-food {
+    display: none;
+}
+
+#frozen-food-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#personal-care-container {
+    position: absolute;
+    top: 1196px;
+    left: 90px;
+    width: 100%;
+    height: 360px;
+    display: flex;
+}
+
+.personal-care-rectangle {
+    width: 380px;
+    height: 360px;
+    border-radius: 30px;
+    border: 3px solid #146BAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 20px; */
+    background: url('personal-care-products.jpg') no-repeat center center / cover;
+}
+
+#personal-care {
+    display: none;
+}
+
+#personal-care-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#health-care-container {
+    position: absolute;
+    top: 1196px;
+    left: 575px;
+    width: 100%;
+    height: 360px;
+    display: flex;
+}
+
+.health-care-rectangle {
+    width: 380px;
+    height: 360px;
+    border-radius: 30px;
+    border: 3px solid #146BAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 20px; */
+    background: url('healthcare-products.jpeg') no-repeat center center / cover;
+}
+
+#health-care {
+    display: none;
+}
+
+#health-care-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#cleaning-container {
+    position: absolute;
+    top: 1196px;
+    left: 1060px;
+    width: 100%;
+    height: 360px;
+    display: flex;
+}
+
+.cleaning-rectangle {
+    width: 380px;
+    height: 360px;
+    border-radius: 30px;
+    border: 3px solid #146BAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 20px; */
+    background: url('cleaning-supplies.jpg') no-repeat center center / cover;
+}
+
+#cleaning {
+    display: none;
+}
+
+#cleaning-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
 }
